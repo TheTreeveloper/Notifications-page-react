@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    background-color: hsl(1, 90%, 64%);
+}
+
+.notification-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.message-count {
+    background-color: hsl(219, 85%, 26%);
+    padding: 0.2rem 0.6rem;
+    border-radius: 20%;
+    font-weight: 600;
+    color: white;
+}
+
+.readMessages {
+    cursor: pointer;
+    color: hsl(219, 14%, 63%);
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    color: hsl(224, 21%, 14%);
+    font-size: 1.3rem;
+}

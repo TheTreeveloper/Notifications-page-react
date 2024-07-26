@@ -1,9 +1,12 @@
+import Notifications from "./components/Notifications";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <div></div>
+      <div>
+        <Notifications />
+      </div>
     </>
   );
 }
