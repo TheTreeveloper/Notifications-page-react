@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Notification } from "./types";
+import { Notification } from "./type";
 import { notifications as mockNotifications } from "./MockData";
 import "./NotificationsPage.css";
 
