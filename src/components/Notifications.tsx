@@ -18,7 +18,7 @@ function Notifications() {
   };
 
   return (
-    <div>
+    <div className="parent-container">
       <div className="container">
         <div className="notification-count">
           <h1>Notifications</h1>
@@ -28,7 +28,79 @@ function Notifications() {
           {mark}
         </p>
       </div>
-      <div className={`notification ${isRead ? "hidden" : ""}`}></div>
+      {/* NOTIFICATION 
+      <div className={`notification ${isRead ? "hidden" : ""}`}></div>*/}
+
+      {/* MESSAGE NOTIFICATIONS */}
+      <div className="user-notifications">
+        {/* Mark Webber */}
+        <div
+          className={`unread notif-container ${
+            isRead ? "hidden hide-background" : ""
+          }`}
+        >
+          <img src="/images/avatar-mark-webber.webp" alt="Mark Webber" />
+          <div className="content">
+            <div className="text-content">
+              <p>
+                <strong>Mark Webber</strong> reacted to your recent post{" "}
+                <span className="link">My first tournament today!</span>
+              </p>
+              <p className="timestamp">1m ago</p>
+            </div>
+            <div
+              className={`notification notif-1 ${isRead ? "hidden" : ""}`}
+            ></div>
+          </div>
+        </div>
+        {/* Mark Webber end */}
+
+        {/* Angela Gray start */}
+        <div
+          className={`unread notif-container ${
+            isRead ? "hidden hide-background" : ""
+          }`}
+        >
+          <img src="/images/avatar-angela-gray.webp" alt="Angela Gray" />
+          <div className="content">
+            <div className="text-content">
+              <p>
+                <strong>Angela Gray</strong> followed you
+              </p>
+
+              <p className="timestamp">1m ago</p>
+            </div>
+            <div
+              className={`notification notif-2 ${isRead ? "hidden" : ""}`}
+            ></div>
+          </div>
+        </div>
+        {/* Angela Gray End */}
+
+        {/* Jacob Thompson start */}
+        <div
+          className={`unread notif-container ${
+            isRead ? "hidden hide-background" : ""
+          }`}
+        >
+          <img src="/images/avatar-jacob-thompson.webp" alt="Angela Gray" />
+          <div className="content">
+            <div className="text-content">
+              <p>
+                <strong>Jacob Thompson</strong> has joined your group{" "}
+                <span className="link">Chess Club</span>
+              </p>
+
+              <p className="timestamp">1m ago</p>
+            </div>
+            <div
+              className={`notification notif-3 ${isRead ? "hidden" : ""}`}
+            ></div>
+          </div>
+        </div>
+        {/* Jacob Thompson End */}
+        {/* MESSAGE NOTIFICATIONS END */}
+      </div>
     </div>
   );
 }

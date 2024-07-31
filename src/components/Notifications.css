@@ -1,16 +1,38 @@
+.parent-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+/* Notifications */
 .notification {
-    border: 1px solid black;
-    padding: 10px;
+    padding: 3px;
     border-radius: 50%;
-    width: 1rem;
-    height: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
     background-color: hsl(1, 90%, 64%);
+    
+}
+
+.notif-1{
+    position: relative;
+    right: 2rem;
+}
+
+.notif-2 {
+    position: relative;
+    bottom: 0.5rem;
+    left: 0.2rem;
+}
+
+.notif-3 {
+    position: relative;
+    right: 8rem;
+    top: 0.1rem;
 }
 
 .notification-count {
@@ -38,7 +60,84 @@
     display: none;
 }
 
+.hide-background {
+    background-color: white !important;
+}
+
 h1 {
     color: hsl(224, 21%, 14%);
     font-size: 1.3rem;
+}
+
+/* User Notifications Section Start */
+
+.user-notifications {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    gap: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unread{
+    background-color: hsla(217, 100%, 95%, 0.458);
+    height: 5rem;
+    width: 22rem;
+    margin-top: 10px;
+}
+
+
+img {
+    width: 2.5rem;
+}
+
+/* ---Timestamp--- */
+.timestamp {
+    font-size: 0.8rem !important;
+    color: hsl(219, 14%, 63%) !important;
+    margin-top: 0.1rem;
+}
+
+.link {
+    font-weight: 800;
+    color: hsl(219, 85%, 26%);
+    
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: hsl(219, 14%, 63%);
+}
+
+strong {
+    color: hsl(224, 21%, 14%);
+    font-weight: 700;
 }

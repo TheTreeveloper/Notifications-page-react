@@ -1,0 +1,167 @@
+.notifications-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.notification {
+    background-color: hsl(211, 68%, 94%);
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 21rem;   
+    gap: 10px;
+}
+
+.notification img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.notif-icon{
+    width: 5px;
+    height: 5px;
+    padding: 3px;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    position: relative;
+    top: 0.4rem;
+}
+
+.read {
+    background-color: white !important;
+}
+
+.notif-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    width: 0.5rem;
+    height: 0.15rem;
+    padding: 0.7rem;
+    background-color:  hsl(219, 85%, 26%);
+}
+
+.notifications-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    gap: 5px;
+}
+
+h1 {
+    font-size: 1.2rem;
+    color: hsl(224, 21%, 14%);
+}
+
+.notifications-control p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: hsl(219, 12%, 42%);
+}
+
+.notifications-control p:hover{
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+
+.notification-content strong{
+    color: hsl(224, 21%, 14%);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.group, .post {
+    color: hsl(219, 12%, 42%) !important;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.group:hover,
+.post:hover {
+    cursor: pointer;
+    color: hsl(219, 85%, 26%) !important;
+}
+
+p {
+    color: hsl(219, 14%, 63%);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.timestamp {
+    font-size: 0.8rem !important;
+    font-weight: 500 !important;
+}
+
+.private-message {
+    padding: 1rem;
+    font-weight: 500 !important;
+    margin-top: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.private-message:hover {
+    cursor: pointer;
+    background-color: hsl(205, 33%, 90%);
+    color: hsl(224, 21%, 14%);
+    font-weight: 700;
+}
+
+.self-image{
+    border-radius: 0.1rem !important;
+    z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+
+    .notifications-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        position: relative;
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    }
+
+    .notification {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .notification img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    .notification-content strong:hover {
+        cursor: pointer;
+        color: hsl(219, 85%, 26%);
+    }
+
+    .self-image{
+        border-radius: 0.1rem !important;
+        position: absolute;
+        left: 83%;
+    }
+}

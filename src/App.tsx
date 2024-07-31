@@ -1,10 +1,11 @@
-import Notifications from "./components/Notifications";
 import "./App.css";
+import Notifications from "./components/NotificationsPage";
+import React from "react";
 
 function App() {
   return (
     <>
-      <div>
+      <div className="main">
         <Notifications />
       </div>
     </>
